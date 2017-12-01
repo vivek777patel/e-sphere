@@ -1,0 +1,42 @@
+{
+  allEmployees
+  {
+    id
+    name
+  }
+}
+
+{
+  "data": {
+    "allEmployees": [
+      {
+        "id": "e1",
+        "name": "Vivek"
+      },
+      {
+        "id": "e2",
+        "name": "SS"
+      }
+    ]
+  }
+}
+
+query($id:String){
+  employee (id:$id)
+  {
+    id
+    name
+  }
+}
+
+
+{
+  "data": {
+    "employee": [
+      {
+        "id": "e1",
+        "name": "Vivek"
+      }
+    ]
+  }
+}

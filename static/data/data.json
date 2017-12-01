@@ -1,0 +1,66 @@
+{
+    "Employee": [
+      {
+        "id": "e1",
+        "name": {
+          "age": "27",
+          "nationality": "Indian",
+          "text": "Vivek"
+        },
+        "sname": "Patel",
+        "email": "vp60132n@pace.edu",
+        "gender": { "type": "male" },
+        "salary": "$10000",
+        "bloodgroup": { "type": "b-positive" },
+        "designation": "lead",
+        "projects": {
+          "project": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      {
+        "id": "e2",
+        "name": {
+          "age": "27",
+          "text": "SS",
+          "nationality" : ""
+        },
+        "sname": "VP",
+        "email": "ssvp60132n@pace.edu",
+        "gender": { "type": "female" },
+        "salary": "$100000",
+        "bloodgroup": { "type": "a-positive" },
+        "designation": "lead",
+        "projects": {
+          "project": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      {
+        "id": "e3",
+        "name": {
+          "age": "25",
+          "nationality": "Indian",
+          "text": "Ashutosh"
+        },
+        "sname": "Singh",
+        "email": "ashutoshsingh@yahoo.com",
+        "gender": { "type": "male" },
+        "salary": "$1000",
+        "bloodgroup": { "type": "o-positive" },
+        "designation": "developer",
+        "projects": {
+          "project": [
+            "P1",
+            "P2"
+          ]
+        }
+      }
+    ]
+}

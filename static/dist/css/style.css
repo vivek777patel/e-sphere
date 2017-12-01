@@ -1,0 +1,136 @@
+.wrapper{
+  display: grid;
+  grid-template-columns: 0.2fr 2fr 0.2fr;
+  grid-template-rows: 0.2fr 15px 2fr 15px 0.2fr;
+  height: 100vh;
+}
+.header-log-area-1{
+  grid-row:1;
+  grid-column:1;
+}
+.header-log-area-2{
+  grid-row:1;
+  grid-column:2;
+}
+.header-log-area-3{
+  grid-row:1;
+  grid-column:3;
+}
+.topEdge{
+  grid-row:2;
+  grid-column:1/4;
+}
+.bottomEdge{
+  grid-row:4;
+  grid-column:1/4;
+}
+.grey-area{
+  background-color: #e6ecf0;
+}
+.white-area{
+  background-color: #fff;
+}
+.middle-area-1{
+  grid-row:3;
+  grid-column:1;
+}
+.middle-area-2{
+    grid-row:3;
+    grid-column:2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.middle-area-2_1{
+    grid-row:1;
+    grid-column:1;
+    display: grid;
+    grid-template-columns: 1fr 15px 0.2fr;
+    grid-template-rows: 1fr;
+}
+
+.middle_-area-2_1_1{
+    grid-row:1;
+    grid-column: 1;
+}
+.middle_-area-2_1_2{
+    grid-row:1;
+    grid-column: 2/3;
+}
+
+.middle_-area-2_1_3{
+    grid-row:1;
+    grid-column: 3/4;
+}
+.middle-area-3{
+  grid-row:3;
+  grid-column:3;
+}
+.footer-area{
+  grid-row:5;
+  grid-column:2;
+}
+
+.circle {
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: white;
+      border: 1px solid #ABE6F8;
+}
+
+.navULClass{
+    list-style: none;
+    padding-left: 0%;
+    margin-top: 0;
+}
+
+.vertical-menu {
+    width: 100%;
+}
+
+.vertical-menu li{
+    /*border-bottom: 1px solid #2Fc2EF;*/
+}
+.vertical-menu a {
+    background-color: #fff;
+    color: #2FC2EF;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    /*border-bottom: 1px solid #2FC2EF;*/
+}
+
+.vertical-menu a:hover {
+    background-color: #2FC2EF;
+    color: white;
+    text-decoration: none;
+}
+
+.vertical-menu a.active {
+    background-color: #2FC2EF;
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2FC2EF;
+    text-decoration: none;
+    border-bottom: 1px solid #2FC2EF;
+}
+
+.menu-icons{
+  height: 30px;
+  width: 30px;
+}
+
+.datatable-wrapper{
+    margin: 5%;
+}
+
+.logoImage{
+    width: 20%
+}
