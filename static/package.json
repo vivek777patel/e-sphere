@@ -1,7 +1,7 @@
 {
   "name": "flaskreactnode",
   "version": "1.0.0",
-  "description": "Python Flask, Node.js, React JS, CSS Grid",
+  "description": "Python Flask, Node.js, React JS, CSS Grid, GraphQL",
   "main": "index.js",
   "scripts": {
     "build": "webpack -p --progress --config webpack.config.js",

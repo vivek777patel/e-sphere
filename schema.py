@@ -5,6 +5,7 @@ jData = json.loads(open('./static/data/data.json').read())
 data = jData["Employee"]
 employees = []
 
+
 class Employee(graphene.ObjectType):
     id = graphene.String()
     name = graphene.String()
@@ -42,10 +43,14 @@ class Query(graphene.ObjectType):
     def resolve_all_employees(self, info, args, context, **kwargs):
         return employees
 
-    def resolve_employee(self, info,context,args):
+    def resolve_employee(self, context, info, args):
+        if bool(context):
+            nid = context.get('id')
+        elif bool(info):
+            nid = info.get('id')
 
         for e in employees:
-            if e.id == context.get('id'):
+            if e.id == nid:
                 return [e]
 
 
