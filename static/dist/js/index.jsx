@@ -13,6 +13,8 @@ $(document).ready(function(){
 
 const Board = () => (
     <div className="datatable-wrapper">
+        <h1>Employee Details</h1>
+        <hr/>
         <div className="input-group">
             <input type="text" id="searchIdTxtBx" className="form-control" placeholder="Search based on ID"/>
             <div className="input-group-btn">
@@ -22,14 +24,16 @@ const Board = () => (
             </div>
         </div>
         <hr/>
-        <div className="table-responsive">
-        <table id="example" className="display table table-hover" width="100%"></table>
+        <div className="table-responsive hscrollbar">
+            <table id="example" className="display table table-hover hscrollbar-table" width="100%"></table>
         </div>
     </div>
 )
 const Message = () => (
     <div className="datatable-wrapper">
-        <h1>Employee Base</h1>
+        <h1>Employee Sphere</h1>
+        <hr/>
+        <p>This is an application which gives the information about the employees</p>
     </div>
 )
 
@@ -44,7 +48,8 @@ const Navigation = () => (
           <nav className="vertical-menu middleDivs">
             <ul className="navULClass">
               <li>
-                <Link to="/" >
+                {/*<Link to="/" onClick={() => console.log('Heading to /')} >*/}
+                <Link to="/" onClick={getSingleEmployee} >
                   <span><img className="menu-icons" src="/dist/images/icons/home.ico"/></span>
                   <span>Home</span>
                 </Link>

@@ -9,10 +9,10 @@
         },
         "sname": "Patel",
         "email": "vp60132n@pace.edu",
-        "gender": { "type": "male" },
+        "gender": { "type": "Male" },
         "salary": "$10000",
         "bloodgroup": { "type": "b-positive" },
-        "designation": "lead",
+        "designation": "Lead",
         "projects": {
           "project": [
             "P1",
@@ -26,14 +26,14 @@
         "name": {
           "age": "27",
           "text": "SS",
-          "nationality" : ""
+          "nationality" : "British"
         },
         "sname": "VP",
         "email": "ssvp60132n@pace.edu",
-        "gender": { "type": "female" },
+        "gender": { "type": "Female" },
         "salary": "$100000",
         "bloodgroup": { "type": "a-positive" },
-        "designation": "lead",
+        "designation": "Lead",
         "projects": {
           "project": [
             "P1",
@@ -51,13 +51,37 @@
         },
         "sname": "Singh",
         "email": "ashutoshsingh@yahoo.com",
-        "gender": { "type": "male" },
+        "gender": { "type": "Male" },
         "salary": "$1000",
         "bloodgroup": { "type": "o-positive" },
-        "designation": "developer",
+        "designation": "Developer",
         "projects": {
           "project": [
             "P1",
+            "P2"
+          ]
+        }
+      },
+      {
+        "id": "e4",
+        "name": {
+          "age": "24",
+          "nationality": "Indian",
+          "text": "Akshit"
+        },
+        "sname": "Shah",
+        "email": "shahaa62@gmail.com",
+        "gender": {
+          "type": "Male"
+        },
+        "salary": "$10000",
+        "bloodgroup": {
+          "type": "o-positive"
+        },
+        "designation": "Developer",
+        "projects": {
+          "project": [
+            "P7",
             "P2"
           ]
         }

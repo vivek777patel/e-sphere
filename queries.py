@@ -21,6 +21,8 @@ query = '''
                     designation
                     salary
                     bloodGroup
+                    age
+                    nationality
 				}
 			}
 		'''
@@ -36,6 +38,8 @@ query_all = '''
                 designation
                 salary
                 bloodGroup
+                age
+                nationality
 			  }
 			}
 		'''

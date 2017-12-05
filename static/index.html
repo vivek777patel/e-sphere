@@ -14,7 +14,7 @@
         <!--<script type="text/javascript" src="./js/bootstrap.min.js"></script>-->
         <!--<script type="text/javascript" src="./js/datatables.min.js"></script>-->
         <!--<script type="text/javascript" src="./js/index.js"></script>-->
-
+        <link rel="shortcut icon" href="/dist/images/favicon.ico" />
         <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css') }}" type="text/css">
         <link rel="stylesheet" href="{{  url_for('static', filename='css/datatables.min.css') }}" type="text/css">
         <link rel="stylesheet" href="{{  url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
@@ -43,26 +43,26 @@
           <div class="bottomEdge grey-area"></div>
           <div class="footer-area">
             <center>
-                <p>Created by: Vivek Patel</p>
+                <p>Created by: Vivek Patel and Akshit Shah</p>
                 <p>Contact information: <a href="mailto:vp60132n@pace.edu">
-                vp60132n@pace.edu</a></p>
+                vp60132n@pace.edu</a> or <a href="mailto:shahaa62@gmail.com">
+                shahaa62@gmail.com</a></p>
             </center>
           </div>
       </div>
     <script src="dist/bundle.js" type="text/javascript"></script>
     <script type="text/javascript">
-        <!--var data1;-->
-        <!--$(function() {-->
-            <!--$.ajax({-->
-                <!--type: "GET",-->
-                <!--url: window.location.origin + "/getAllEmployee",-->
-                <!--contentType: "application/json; charset=utf-8",-->
-                <!--&lt;!&ndash;data: { echoValue: $('input[name="echoText"]').val() },&ndash;&gt;-->
-                <!--success: function(data) {-->
-                    <!--dataTable(data);-->
-                <!--}-->
-            <!--});-->
-        <!--});-->
+        $(function() {
+            $.ajax({
+                type: "GET",
+                url: window.location.origin + "/getAllEmployee",
+                contentType: "application/json; charset=utf-8",
+                <!--data: { echoValue: $('input[name="echoText"]').val() },-->
+                success: function(data) {
+                    dataTable(data);
+                }
+            });
+        });
 
     </script>
    </body>

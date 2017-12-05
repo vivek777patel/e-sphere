@@ -7,6 +7,9 @@ function tableHeader(){
         { title: "Designation" },
         { title: "Salary" },
         { title: "Bloodgroup" }
+        ,
+        { title: "Age" },
+        { title: "Nationality" }
     ];
     return header;
 }
@@ -23,8 +26,13 @@ function getAllEmployees(){
 
 }
 function getSingleEmployee(){
+//    console.log('hiii');
     var searchId = $('#searchIdTxtBx').val();
-    console.log(searchId);
+    if (typeof searchId == 'undefined')
+        searchId = '';
+    var curLoc = window.location.origin + "/getAllEmployee/"+searchId;
+    history.pushState(null, null, curLoc);
+//    console.log(searchId);
     $.ajax({
         type: "GET",
         url: window.location.origin + "/getAllEmployee/"+searchId,
@@ -36,7 +44,7 @@ function getSingleEmployee(){
 }
 
 function dataTable(data) {
-    console.log(data);
+//    console.log(data);
     var tableData=getTableData(data);
     $('#example').DataTable( {
     data: tableData,
@@ -46,14 +54,13 @@ function dataTable(data) {
 }
 
 function getTableData(data){
-    console.log('chal hatt');
     str = JSON.stringify(data).replace('allEmployees','Employee').replace('employee','Employee');
     data1 = JSON.parse(str);
-    console.log(data1);
+    //console.log(data1);
     var  result = [];
     if(data1.Employee!=null){
         for (const key of Object.keys(data1.Employee)) {
-            console.log(data1.Employee[key].id);
+            //console.log(data1.Employee[key].id);
             var dArray = [
                 null!=data1.Employee[key].id?data1.Employee[key].id:'',
                 null!=data1.Employee[key].name?data1.Employee[key].name:'',
@@ -63,6 +70,9 @@ function getTableData(data){
                 null!=data1.Employee[key].designation?data1.Employee[key].designation:'',
                 null!=data1.Employee[key].salary?data1.Employee[key].salary:'',
                 null!=data1.Employee[key].bloodGroup?data1.Employee[key].bloodGroup:''
+                ,
+                null!=data1.Employee[key].age?data1.Employee[key].age:'',
+                null!=data1.Employee[key].nationality?data1.Employee[key].nationality:''
             ];
             result.push(dArray);
         }
