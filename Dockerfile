@@ -1,4 +1,5 @@
 FROM python
+LABEL maintainer="vivek777patel@gmail.com"
 ADD . /myapp
 WORKDIR /myapp
 EXPOSE 5000
