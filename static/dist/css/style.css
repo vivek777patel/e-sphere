@@ -33,6 +33,7 @@
 .middle-area-1{
   grid-row:3;
   grid-column:1;
+  max-width:127px;
 }
 .middle-area-2{
     grid-row:3;
@@ -53,6 +54,7 @@
 .middle_-area-2_1_1{
     grid-row:1;
     grid-column: 1;
+    max-width: 1048px;
 }
 .middle_-area-2_1_2{
     grid-row:1;
@@ -62,10 +64,12 @@
 .middle_-area-2_1_3{
     grid-row:1;
     grid-column: 3/5;
+    max-width: 209px;
 }
 .middle-area-3{
   grid-row:3;
   grid-column:3;
+  max-width:127px;
 }
 .footer-area{
   grid-row:5;
@@ -129,6 +133,7 @@ a:visited {
 
 .datatable-wrapper{
     margin: 2%;
+    max-width: 1008px;
 }
 
 .logoImage{
@@ -137,7 +142,7 @@ a:visited {
 .hscrollbar{
     overflow: auto;
     max-height : 350px;
-    /*max-width: 942px;*/
+    /*max-width: 1008px;*/
 }
 
 /* Let's get this party started */

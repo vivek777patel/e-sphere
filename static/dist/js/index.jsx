@@ -18,7 +18,7 @@ const Board = () => (
         <div className="input-group">
             <input type="text" id="searchIdTxtBx" className="form-control" placeholder="Search based on ID"/>
             <div className="input-group-btn">
-                <button className="btn btn-default" onClick={getSingleEmployee} type="submit">
+                <button className="btn btn-default" onClick={getSingleEmployee} type="submit">Search
                     <i className="glyphicon glyphicon-search"></i>
                 </button>
             </div>
