@@ -24,8 +24,8 @@ const Board = () => (
             </div>
         </div>
         <hr/>
-        <div className="table-responsive hscrollbar">
-            <table id="example" className="display table table-hover hscrollbar-table" width="100%"></table>
+        <div className="table-responsive">
+            <table id="example" className="display table table-hover hscrollbar" width="100%"></table>
         </div>
     </div>
 )
